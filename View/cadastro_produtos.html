@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BOM PONTO</title>
+    <link rel="stylesheet" href="/bootstrap-5.0.0-beta3-dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="/Style/cadastro_produto.css">
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark">
+        <div class="container-fluid">
+            <a class="navbar-brand fs-2">BOM PONTO</a>
+        </div>
+    </nav>
+
+    <div class="container mt-5">
+        <label class="fs-5 mb-2 produto">Produto</label>
+        <div class="mb-3">
+            <input type="text" class="form-control" id="nomeProduto" placeholder="Nome">
+        </div>
+        <div class="mb-3">
+            <input type="text" class="form-control" id="valorProduto" placeholder="Valor">
+        </div>
+        <div class="mb-3">
+            <textarea class="form-control" id="DescricaoProduto" rows="3" placeholder="Descrição"></textarea>
+        </div>
+    </div>
+
+    <div style="float: right;">
+        <input type="button" id="btnSalvarProduto" class="btnSalvar" value="SALVAR">
+    </div>
+
+    <script src="/bootstrap-5.0.0-beta3-dist/js/bootstrap.min.js"></script>
+</body>
+
+</html>
