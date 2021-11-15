@@ -16,4 +16,9 @@ nav{
     cursor: pointer;
     color: #ffffff;
     padding: 10px 22px;
+    box-shadow: -3px 2px 16px -4px #000000;
+}
+
+.btnSalvar:active{
+    margin-top: 7px;
 }
