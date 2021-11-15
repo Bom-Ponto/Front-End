@@ -25,3 +25,20 @@ nav{
     margin-left: 6rem;
     color: #ff4081;    
 }
+
+.btnCadastrar {
+    margin-top: 1.5rem;
+    background-color: #419488;
+    border-radius: 12px;
+    border: 2px solid #419488;
+    display: inline-block;
+    cursor: pointer;
+    color: #ffffff;
+    padding: 10px 22px;
+    box-shadow: -3px 2px 16px -4px #000000;
+    z-index: -1;
+}
+
+.btnCadastrar:active {
+    box-shadow: -3px 2px 16px -4px #000000 inset;
+}

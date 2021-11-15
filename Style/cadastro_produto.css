@@ -1,14 +1,15 @@
-nav{
+nav {
     padding-top: 0rem !important;
     background-color: #2E948A;
     box-shadow: -13px -19px 19px 16px #000000;
-   }
+}
 
-.produto{
+.produto {
     color: #FF4081;
 }
 
-.btnSalvar{
+.btnSalvar {
+    margin-top: 6.6rem;
     background-color: #419488;
     border-radius: 12px;
     border: 2px solid #419488;
@@ -19,6 +20,22 @@ nav{
     box-shadow: -3px 2px 16px -4px #000000;
 }
 
-.btnSalvar:active{
-    margin-top: 7px;
+.btnSalvar:active {
+    margin-top: 7rem;
+}
+
+.SalvarProduto {
+    margin-top: 6rem;
+    background-color: #419488;
+    border-radius: 12px;
+    border: 2px solid #419488;
+    display: inline-block;
+    cursor: pointer;
+    color: #ffffff;
+    padding: 10px 22px;
+    box-shadow: -3px 2px 16px -4px #000000;
+}
+
+.SalvarProduto:active {
+    margin-top: 6.4rem;
 }
