@@ -1,29 +1,38 @@
-nav{
- padding-top: 0rem !important;
- background-color: #2E948A;
- box-shadow: -13px -19px 19px 16px #000000;
+html,
+body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
 }
 
-.color{
+nav {
+    padding-top: 0rem !important;
+    background-color: #2E948A;
+    box-shadow: -13px -19px 19px 16px #000000;
+}
+
+.color {
     background-color: #2E948A;
 }
 
-.marginTopCards{
+.marginTopCards {
     margin-top: 3em;
 }
-.center{
+
+.center {
     justify-content: center;
 }
 
-.card{
+.card {
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    height: 22em;
 }
 
-.produtos{
+.produtos {
     position: relative;
     top: 72px;
     margin-left: 6rem;
-    color: #ff4081;    
+    color: #ff4081;
 }
 
 .btnCadastrar {
@@ -41,4 +50,8 @@ nav{
 
 .btnCadastrar:active {
     box-shadow: -3px 2px 16px -4px #000000 inset;
+}
+
+.imgHeight {
+    max-height: 216px;
 }
