@@ -20,7 +20,7 @@ const displayCards = async () => {
       `
       <div class="col-sm-3 mx-5 my-5">
         <div class="card">
-          <img src="${prod.pictureServerPath}" class="card-img-top" alt="...">
+          <img src="${prod.pictureServerPath}" class="card-img-top imgHeight">
           <div class="card-body">
             <h5 class="card-title">${prod.name}</h5>
             <h6 class="card-subtitle my-2 text-muted">Codigo:  ${prod.barCode}</h6>
@@ -29,6 +29,7 @@ const displayCards = async () => {
           </div>
         </div>
       </div>`
+      
     );
   });
 };
