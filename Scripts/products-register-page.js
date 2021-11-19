@@ -5,6 +5,11 @@ const inputProdBarCode = document.getElementById('codigoProduto');
 const inputProdValidUnitl = document.getElementById('validade');
 const inputProdImgUrl = document.getElementById('urlImg');
 
+$('document').ready(function() {
+  $("#valorProduto").mask('R$ 0.00.00.00.00,00', {reverse: false});
+});
+
+
 function register() {
   if (
     !inputProdName.value ||
@@ -29,7 +34,7 @@ function register() {
     },
     body: JSON.stringify({
       name: inputProdName.value,
-      price: inputProdPrice.value,
+      price: inputProdPrice.value.replace(/\D+/g, ''),
       barCode: inputProdBarCode.value,
       validUntil: inputProdValidUnitl.value,
       pictureServerPath: inputProdImgUrl.value,

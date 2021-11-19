@@ -5,10 +5,10 @@ const passwordInput = document.getElementById('senha');
 function login() {
   if (!emailInput.value || !passwordInput.value) {
     return Swal.fire({
+      icon: 'error',
       title: 'Oops!',
       text: 'Parece que você não preencheu todos os campos',
-      icon: 'error',
-      confirmButtonText: 'OK',
+      confirmButtonText: 'OK'
     });
   }
   const BASE_URL = 'https://bomponto.herokuapp.com/api/users/login';
@@ -18,7 +18,7 @@ function login() {
       'Content-type': 'application/json',
       Accept: 'application/json',
     },
-    body: JSON.stringify({
+    body: JSON.stringify({     
       email: emailInput.value,
       password: passwordInput.value,
     }),
@@ -29,25 +29,30 @@ function login() {
       console.log('repsonse:', res);
       if (res.status === 404) {
         return Swal.fire({
+          icon: 'error',
           title: 'Não Encontrado',
           text: 'Esta conta não existe.',
-          icon: 'error',
-          confirmButtonText: 'OK',
+          confirmButtonText: 'OK'
         });
       }
       if (res.status === 400) {
         return Swal.fire({
+          icon: 'error',
           title: 'Oops!',
           text: 'Senha incorreta.',
-          icon: 'error',
-          confirmButtonText: 'OK',
+          confirmButtonText: 'OK'
         });
       }
-      Swal.fire({
+     Swal.fire({
         title: 'Pronto!',
         text: 'Login concluído',
         icon: 'success',
-        confirmButtonText: 'OK',
+        confirmButtonText: 'As compras!',
+        confirmButtonColor: "#419488"
+      }).then((result) => {
+        if (result.isConfirmed) {
+          window.location.href = '/View/Produtos.html';
+        }
       });
     })
     .catch(() => {

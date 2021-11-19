@@ -49,3 +49,7 @@ function formatMoneyValuePipe(value) {
 window.onload = () => {
   displayCards();
 };
+
+createProduct = () => {
+  window.location.href = '/View/cadastro_produtos.html';
+};

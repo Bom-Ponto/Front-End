@@ -9,7 +9,7 @@ nav {
 }
 
 .btnSalvar {
-    margin-top: 6.6rem;
+    margin-top: 5.3rem;
     background-color: #419488;
     border-radius: 12px;
     border: 2px solid #419488;
@@ -21,7 +21,7 @@ nav {
 }
 
 .btnSalvar:active {
-    margin-top: 7rem;
+    margin-top: 6rem;
 }
 
 .SalvarProduto {
